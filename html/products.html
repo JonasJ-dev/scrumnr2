@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Fuflo Arbata</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Apie <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">Prekės</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Kontaktai</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./test.html">Arbatos Testas</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Paieška">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Paieška</button>
+        </form>
+      </div>
+    </nav>
+
+  </header>
+  <main class="containerP">
+    <aside>
+      <h3>Arbatos rūšis</h3>
+      <ul>
+        <li onclick="teaGreen()"><input name="tea" type="radio"> Žalioji arbata</li>
+        <li onclick="teaBlack()"><input name="tea" type="radio"> Juodoji arbata</li>
+        <li onclick="teaFruitful()"><input name="tea" type="radio"> Vaisinė arbata</li>
+        <li onclick="teaRed()"><input name="tea" type="radio"> Raudonoji arbata</li>
+        <li onclick="teaWhite()"><input name="tea" type="radio"> Baltoji arbata</li>
+      </ul>
+      <h3>Kaina</h3>
+      <ul>
+        <li onclick="price2()" ><input name="price" type="radio">  0-3</li>
+        <li onclick="price6()" ><input name="price" type="radio">  3-7</li>
+        <li onclick="price9()" ><input name="price" type="radio"> 7-10</li>
+        <li onclick="price12()" ><input name="price" type="radio"> 10-13</li>
+        <!-- <li onclick="price15" ><input name="price" type="radio"> 13-15</li> -->
+      </ul>
+      
+      <h3>Prekės ženklas</h3>
+      <ul>
+        <li onclick="amberfarm()"><input name="type" type="radio"> Amberfarm</li>
+        <li onclick="diveevo()"><input name="type" type="radio"> Diveevo</li>
+        <li onclick="justmake()"><input name="type" type="radio"> Justmake</li>
+          <br><button class="reset-filter" onclick="reset()">Valyti filtrą</button>
+      </ul>
+
+    </aside>
+    <section>
+      <div class="row">
+        <div class="card col-sm-3 black g b" style="width-max: 18rem;">
+          <img src="../img/juodoji-arbata-sandakphu-ruby.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>3,20 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Juodoji arbata SANDAKPHU RUBY</h5>
+           
+          </div>
+        </div>
+        <div class="card col-sm-3 black g b" style="width-max 18rem;">
+          <img src="../img/juodoji-arbata-gold-assam.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>5,30 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Juodoji arbata GOLD ASSAM</h5>
+ 
+          </div>
+        </div>
+        <div class="card col-sm-3 black h a" style="width-max: 18rem;">
+          <img src="../img/juodoji-arbata-earl-grey.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>1,50 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Juodoji arbata EARL GREY</h5>
+           
+          </div>
+        </div>
+        <div class="card col-sm-3 black h c" style="width-max: 18rem;">
+          <img src="../img/juodoji-arbata-golden-needle.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>7,50 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Juodoji arbata GOLDEN NEEDLE</h5>
+      
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="card col-sm-3 green h a" style="width-max: 18rem;">
+          <img src="../img/zalioji-arbata-green-snail-yunnan.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>2,65 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Žalioji arbata GREEN SNAIL (Yunnan)</h5>
+            
+
+
+          </div>
+        </div>
+        <div class="card col-sm-3 green h a " style="width-max: 18rem;">
+          <img src="../img/nepalo-zalioji-arbata-sandakphu-green.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>2,99 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Nepalo žalioji arbata SANDAKPHU GREEN</h5>
+          
+
+          </div>
+        </div>
+        <div class="card col-sm-3 green n a" style="width-max: 18rem;">
+          <img src="../img/zalioji-arbata-japan-sencha.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>2,49 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Žalioji arbata JAPAN SENCHA</h5>
+            
+
+
+          </div>
+        </div>
+        <div class="card col-sm-3 green n a" style="width-max: 18rem;">
+          <img src="../img/zalioji-arbata-japan-genmaicha.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>2,30 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Žalioji arbata JAPAN GENMAICHA</h5>
+           
+
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="card col-sm-3 fruitful n a" style="width-max: 18rem;">
+          <img src="../img/vaisine-arbata-uogele.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>1,80 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Vaisinė arbata UOGELĖ</h5>
+
+
+          </div>
+        </div>
+        <div class="card col-sm-3 fruitful n a" style="width-max: 18rem;">
+          <img src="../img/vaisine-besimokantiems-arbata.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>1,50 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Vaisinė BESIMOKANTIEMS arbata</h5>
+
+          </div>
+        </div>
+        <div class="card col-sm-3 fruitful n c" style="width-max: 18rem;">
+          <img src="../img/vaisine-saules-spinduliu-arbata.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>4,95 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Vaisinė SAULĖS SPINDULIŲ arbata</h5>
+
+
+          </div>
+        </div>
+        <div class="card col-sm-3 fruitful n a" style="width-max: 18rem;">
+          <img src="../img/vaisine-ananasu-ir-kokosu-arbata.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>1,98 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Vaisinė ANANASŲ ir KOKOSŲ arbata</h5>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="card col-sm-3 red g a" style="width-max: 280px;">
+          <img src="../img/raudonoji-rooibos-arbata-kalahari.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>1,50 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Raudonoji rooibos arbata KALAHARI</h5>       
+
+          </div>
+        </div>
+        <div class="card col-sm-3 red g a" style="width-max: 280px;">
+          <img src="../img/raudonoji-rooibos-arbata-mocca-cream.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>1,50 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Raudonoji rooibos arbata MOCCA CREAM</h5>
+           
+          </div>
+        </div>
+        <div class="card col-sm-3 red h a" style="width-max: 280px;">
+          <img src="../img/raudonoji-rooibos-arbata-wintertime.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>1,65 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Raudonoji rooibos arbata WINTERTIME</h5>
+          
+
+          </div>
+        </div>
+        <div class="card col-sm-3 red h a" style="width-max: 280px;">
+          <img src="../img/raudonoji-rooibos-arbata-marzipan.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>1,50€</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Raudonoji rooibos arbata MARZIPAN</h5>            
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="card col-sm-3 white g b" style="width-max: 280px;">
+          <img src="../img/baltoji-arbata-buddha-s-little-secret.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>3,30 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Baltoji arbata BUDDHA'S LITTLE SECRET</h5>       
+
+          </div>
+        </div>
+        <div class="card col-sm-3 white g b" style="width-max: 280px">
+          <img src="../img/baltoji-arbata-friends-forever.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>3,40 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Baltoji arbata FRIENDS FOREVER</h5>
+           
+          </div>
+        </div>
+        <div class="card col-sm-3 white g d" style="width-max: 280px;">
+          <img src="../img/baltoji-arbata-bai-hao-yin-zhen.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>11,34 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Baltoji arbata BAI HAO YIN ZHEN</h5>
+          
+
+          </div>
+        </div>
+        <div class="card col-sm-3 white g d" style="width-max: 280px;">
+          <img src="../img/baltoji-arbata-pai-mu-tan.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>12,49 €</p>
+            <center>
+              <a href="#" class="btn1 btn-primary">Į krepšėlį</a>
+            </center>
+            <h5 class="card-title">Baltoji arbata PAI MU TAN</h5>            
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+  </main>
+
+  <footer class="keiciamaKLFooter">
+    <div id="footer" class="card text-center">
+      <div class="card-body">
+        <ul>
+          <li><a class="card-text" href="contact.html">Kontaktai</a></li>
+          <li><a class="card-text" href="https://www.facebook.com/ateitiesprofesija" target="_blank">Soc.tinklai</a></li>
+          <li><a class="card-text" href="test.html">Testas</a></li>
+        </ul>
+        <p class="card-text text-muted">Copyright</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/products.js"></script>
+
+</body>
+
+</html>

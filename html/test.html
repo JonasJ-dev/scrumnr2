@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Fuflo Arbata</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">Apie <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./products.html">Prekės</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Kontaktai</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./test.html">Arbatos Testas</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Paieška">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Paieška</button>
+              </form>
+            </div>
+          </nav>
+
+    </header>
+    <main class="mainTest">
+        <section class="variantasPirmas p-5">
+           
+            <div>
+                <h1>Ką žinai apie arbata?</h1>
+                <div class="question selected">
+                    <p>1. Iki 1972 m. ši šalis – egzotiškų prieskonių ir arbatos gamintoja – vadinosi Ceilonu.
+                        Šalis gamina daug juodosios arbatos maisto pramonei, tačiau yra žinoma ir kaip išskirtinės
+                        kokybės birios juodosios arbatos augintoja. Kaip ji vadinasi dabar?</p>
+                    <ul>
+                        <li onclick="selectAnswer(false);"><input name="question-1" type="radio"> Dramblio Kaulo Krantas</input></li>
+                        <li onclick="selectAnswer(false);"><input name="question-1" type="radio"> Indonezija </input></li>
+                        <li onclick="selectAnswer(false);"><input name="question-1" type="radio"> Butanas </input></li>
+                        <li onclick="selectAnswer(true);"><input name="question-1" type="radio"> Šri Lanka </input></li>
+                    </ul>
+                    <div class="correct-answer">
+                        Teisingai!
+                    </div>
+                    <div class="incorrect-answer">
+                        Neteisingai!
+                    </div>
+                    <p class=" answer d-none">
+                        Ceilonas 1972 m. pakeitė pavadinimą į Šri Lanką, tačiau dauguma produktų
+                        ir šiandien vadinami senuoju geografiniu šalies vardu – Ceilono cinamoną ir Ceilono arbatą
+                        žino visame pasaulyje.
+                    </p>
+                </div>
+
+            </div>
+            <div class="question">
+                <p>2. JAV išsilaisvinimo kovų istorija susijusi su arbata. 1773 m „Laisvės sūnūs“, pradėję
+                    kovą prieš „arbatos įstatymą“, įsigavo į uoste stovėjusius arbatą gabenančius laivus ir
+                    išmetė arbatą į jūrą. Dabar šis įvykis dažnai laikomas simboline Amerikos nepriklausomybės
+                    karo pradžia. Kaip vadinamas šis įvykis?</p>
+                <ul>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio"> Penktos valandos arbatėlė </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio"> Versalio arbatėlė </input></li>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio"> Bostono arbatėlė </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio"> Arbata pas Tifanį </input></li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none">
+                    Bostono arbatėlė (Boston Tea party) pradėjo JAV nepriklausomybės karą,
+                    kuris baigėsi pasirašius Versalio sutartį. Gali būti, kad Versalyje taip pat buvo geriama arbata,
+                    kuri tuo metu buvo labai svarbi ekonomikos, politikos ir diplomatijos dalis.
+
+                </p>
+            </div>
+            <div class="question">
+                <p>3. Pasaulyje kasmet užauginama beveik 5 mln. tonų arbatos (skaičiuojant tik camelia augalo
+                    sukultūrintas
+                    šeimas).
+                    Kokia šalis šiuo metu yra didžiausia arbatos augintoja pasaulyje?</p>
+                <ul>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio"> Kinija </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio"> Šri Lanka </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio"> Kenija </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio"> Indija </input></li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none">
+                    Kinija yra didžiausia pasaulyje arbatos augintoja, užauginanti beveik pusę pasaulinio arbatos
+                    kiekio.
+                </p>
+            </div>
+            <div class="question">
+                <p>4. Kinija yra didžiausia pasaulyje arbatos augintoja, bet ne eksportuotoja – didžioji dalis šioje
+                    šalyje
+                    išaugintos arbatos išgeriama pačioje Kinijoje. Kokia šalis yra didžiausia arbatos eksportuotoja
+                    pasaulyje?
+                </p>
+                <ul>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio"> Šri Lanka </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio"> Nepalas </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio"> Meksia </input></li>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio"> Kenija </input></li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none"> Daugiausia arbatos eksportuoja Afrikos šalis Kenija – beveik 500 tūkst. t
+                    kasmet.
+                    Ji pasaulį aprūpina nebrangia juodąja arbata.</p>
+            </div>
+            <div class="question">
+                <p>5. Paprastai arbatos pasaulio „žemėlapyje“ skiriamos žaliosios arbatos teritorijos (šalys,
+                    kur geriama beveik vien tik žalioji, mažai fermentuota arbata) ir juodosios arbatos kraštai
+                    (šalys, kur daug labiau paplitusi juodoji arbata). Visgi Pietų Amerikoje labiausiai išplitusi
+                    dar kitokia, žolelių arbata, tradiciškai geriama košiant per šiaudelį ir kelis kartus papildant
+                    indą vandeniu. Kaip dar vadinama ši arbata?</p>
+                <ul>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Moringa </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Kompučia </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Mačia </input> </li>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio">Matė</input></li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none">
+                    Pietų Amerikoje labai paplitusi žolelių arbata (Yerba Mate) dažnai vadinama tiesiog mate.
+                </p>
+            </div>
+            <div class="question">
+                <p>6. O kokios arbatos daugiausia išgeriama Lietuvoje?</p>
+                <ul>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Vaisinių arbatų </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">žaliosios arbatos </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">žolelių arbatos </input></li>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio">Juodosios arbatos </input></li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none">
+                    Lietuva daug metų priskiriama juodosios
+                    arbatos žemėlapiui ir tradicijai, kaip ir dauguma
+                    Vakarų Europos šalių. Ir nors žaliosios ir žolelių
+                    arbatų kasmet Lietuvoje išgeriama vis daugiau, juodoji
+                    arbata smarkiai pirmauja.
+                </p>
+            </div>
+            <div class="question">
+                <p>7. Kuris iš arbatos prekių ženklų pastaraisiais metais buvo
+                    populiariausias Lietuvoje?</p>
+                <ul>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Skonis ir kvapai </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Dilmah </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Etno </input></li>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio">Lipton </input></li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none">
+                    „Lipton“ pastaraisiais metais buvo labiausiai paplitęs
+                    ir populiariausias arbatos ženklas Lietuvoje.
+                </p>
+            </div>
+            <div class="question">
+                <p>8. Kuri iš šių šalių garsi joje auginama arbata ir netgi kviečia turistus
+                    po ją keliauti istoriniu „arbatos keliu“?</p>
+                <ul>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio">Sakartvelas (Gruzija) </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Čekija </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Jungtinė Karalystė </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Austrija </input></li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none">
+                    Nors arbatos gėrimo tradicijomis garsėja Jungtinė Karalystė, šios
+                    šalies klimatas nėra itin tinkamas arbatos auginimui. Arbata auginama Sakartvele.
+                </p>
+            </div>
+            <div class="question">
+                <p>9. Arbata energizuoja, teikia žvalumo, praskaidrina mintis - šis plačiai žinomas arbatos
+                    poveikis yra daugelio medžiagų sąveikos rezultatas. Ryškiausiai veikia kofeino analogas,
+                    kuris arbatoje vadinamas teinu. Kuri iš įprastai paruoštų arbatų jo turės daugiausia?</p>
+                <ul>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio">Juooji arbata </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Žalioji arbata </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Raudonoji arbata (Rooibosh) </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Matė (yerba mate) </input></li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none">
+                    Teino daugiausia turi juodoji arbata. O raudonoji arbata jo neturi visiškai,
+                    todėl ne tik neenergizuoja, o dėl kitų sudėtinių dalių poveikio netgi ramina ir „lėtina“.
+                </p>
+            </div>
+            <div class="question">
+                <p>10. Arbatos puodeliui paruošti, pasak britų, reikia 3–5 g kokybiškos birios arbatos.
+                    Populiariuosiuose arbatos pakeliuose su smulkinta arbata arbatos paprastai tėra 1–1,5 g.
+                    Kiek tonų arbatos kasmet parduodama Lietuvoje?</p>
+                <ul>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Nuo 200 iki 500 </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">1500-2000 </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">3000-4000 </input></li>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio">Nuo 500 iki 1000 </input></li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none">
+                    Lietuvoje kasmet išgeriama iki 1000 tonų arbatos.
+                </p>
+            </div>
+            <div class="question">
+                <p>11. Kinijoje labai vertinama arbata, kuri skinama ne nuo arbatkrūmio, o nuo camelia genties
+                    arbatos medžio. Arbatos mylėtojai moka dešimtis tūkstančių dolerių už šios arbatos išskirtinumą.
+                    Vienas retų, ilgiausiai išlaikytų šios arbatos egzempliorių Europoje, yra ir Lietuvoje. Kokia
+                    tai arbata?</p>
+                <ul>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio">Pu-erh </input> ></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Pieninis ulongas </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Čaj Bodrost </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Pai Mu dan </input> </li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none">
+                    Tokia arbata vadinama PU-ERH arbata. Arbatos medis Kinijoje labai saugomas, dažnai priklauso ne
+                    vienai
+                    šeimai, o kelioms tos pačios giminės kartoms ar bendruomenei. Nuo jo skinami lapeliai fermentuojami
+                    ypatingu
+                    būdu – laikui bėgant fermentacija nenutrūksta, arbata bręsta ir brangsta. Rytų medicinoje,
+                    šiuolaikinėje
+                    dietologijoje šiai arbatai skiriama nemažai dėmesio.
+                </p>
+            </div>
+            <div class="question">
+                <p>12. Kuo vardu garsi Lietuvoje vaistininkė, žolininkė, etnomedicinos tyrinėtoja, parašiusi ne
+                    vieną knygą apie gamtos
+                    ir žolelių teikiamus sveikatos receptus? Jos vardu pavadintas fondas remia darbus gydomųjų
+                    augalų tyrimų srityje, jai
+                    atminti gimtajame krašte įveistas vyšnių sodas. </p>
+                <ul>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Monika Šilčiūtė </input> </li>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio">Eugenija Šimkūnaitė </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Adelė Karaliūnaitė </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Jadvyga Balvočiūtė </input> </li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none">
+                    Habilituota biologijos mokslų daktarė Eugenija Šimkūnaitė buvo vaistinių augalų tyrinėtoja,
+                    vaistininkė, žolininkė,
+                    savam krašte – žiniuonė, palikusi rašytinį mūsų krašto vaistinių augalų ir jų derinių lobyną.
+                    Knygose „Vaistažolės“,
+                    „Ką žino tik ragana, arba gyvenimas be tablečių“ įtaigiai ir šmaikščiai pasakoja apie čia pat po
+                    kojomis augančius lobius.
+                </p>
+            </div>
+            <div class="question">
+                <p>13. Bergamote – citrusinio vaisiaus aliejumi – aromatizuota arbata Europoje išplito pavadinta
+                    žmogaus vardu. Šiandien arbatos
+                    mišiniai, aromatizuoti bergamotės aliejumi, dažnai taip ir vadinami. Koks tai vardas?</p>
+                <ul>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Sir Winston </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Sgt. Pepper </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Prince Vladimir </input> </li>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio">Earl Grey </input> </li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none">
+                    Earl Grey – dauguma arbatų, aromatizuotų bergamote, vadinamos šiuo vardu. Aromatizuoti arbatą
+                    pradėjo kinai. Dėliojo tarp
+                    arbatlapių jazminų ar rožių žiedlapius (arbatlapiai ypač gerai sugeria aromatus), rūkė arbatlapius
+                    kankorėžių dūmais ar prisodrindavo
+                    kvapiųjų aliejų.
+                </p>
+            </div>
+            <div class="question">
+                <p>14. Kokybiškų birių juodųjų arbatų pavadinimuose paprastai yra kelios didžiosios raidės. Pvz.,
+                    OP, SFTGFOP. Ką jos reiškia?</p>
+                <ul>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio">Tai sutrumpintas arbatos kokybės
+                        aprašyma </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Tai tiesiog rinkodaros triukas,
+                        darantis pavadinimą </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Derliaus metus </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Tai geografinės vietovės, kur arbata
+                        auginima, kodas</input></li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none">
+                    Didžiosios raidės pavadinime – tai sutrumpinti epitetai, skirti arbatos kokybei nusakyti. Iš jų
+                    nesunku suprasti,
+                    kurie arbatos lapeliai, kuriuo vegetacijos laikotarpiu ir kaip buvo nuskinti. OP paprastai reiškia
+                    kokybišką birią arbatą.
+                    FOP įspėja, kad ji skinta vėlokai arba mašinomis, dauguma lapelių „lūžę“. Didžiosios raidės priekyje
+                    kiekviena prideda po vieną
+                    epitetą arbatos kokybei. Geriausia juodoji arbata, kurią galite rasti aprašytą tokiais epitetais,
+                    yra SFTGFOP.
+                </p>
+            </div>
+            <div class="question">
+                <p>15. Ši šalis išsiskiria tuo, jog pagamina nedidelį kiekį labai kokybiškų žaliųjų arbatų. Šioje
+                    šalyje išgeriama tris kartus daugiau,
+                    nei užauginama. Joje užauginta žalioji arbata tokia išskirtinė, jog dažnai falsifikuojama. Kokia
+                    tai šalis? Sencha, genmaicha, kokeicha,
+                    matcha – tai garsiausių joje auginamų žaliųjų arbatų pavadinimai.</p>
+                <ul>
+                    <li onclick="selectAnswer(true);"><input name="question-1" type="radio">Japonija </input></li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Pietų Korėja </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Filipinai </input> </li>
+                    <li onclick="selectAnswer(false);"><input name="question-1" type="radio">Mianmaras </input> </li>
+                </ul>
+                <div class="correct-answer">
+                    Teisingai!
+                </div>
+                <div class="incorrect-answer">
+                    Neteisingai!
+                </div>
+                <p class=" answer d-none"> Japonija gamina itin kokybiškas žaliąsias arbatas, nedidelius kiekius arbatų
+                    eksportuoja. Sencha, genmaicha, kokeicha, matcha yra garsiausių japoniškų žaliųjų arbatų
+                    pavadinimai.</p>
+            </div>
+
+            <button id="btn" onclick="nextQuestion();">Kitas</button>
+            </div>
+        </section>
+    </main>
+    <footer class="keiciamaKLFooter">
+        <div id="footer" class="card text-center">
+            <div class="card-body">
+                <ul>
+                    <li><a class="card-text" href="contact.html">Kontaktai</a></li>
+                    <li><a class="card-text" href="https://www.facebook.com/ateitiesprofesija" target="_blank">Soc.tinklai</a></li>
+                    <li><a class="card-text" href="test.html">Testas</a></li>
+                </ul>
+                <p class="card-text text-muted">Copyright</p>
+            </div>
+          </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

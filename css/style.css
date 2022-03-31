@@ -1,0 +1,130 @@
+/* @media screen and (max-width:425px){
+    .mainTest .variantasPirmas h1{
+        font-size: 20px;
+    }
+    .mainTest .variantasPirmas p{
+        font-size: 20px;
+    }
+    .mainTest .variantasPirmas ul li{
+        font-size: 20px;
+    }
+} */
+.mainTest{
+    min-width: 380px;
+}
+
+
+.keiciamaKLFooter ul{
+   list-style: none; 
+   text-align: center;
+}
+
+li{
+    list-style-type: none;
+    margin-right: 45px;
+}
+#footer{
+    margin-top: 20px;
+}
+
+.mainTest{
+    background-image: url(../img/pav1.jpg);
+    background-size: cover;
+    height: 70vh;
+    
+    
+    /* height: 500px; */
+
+   
+	
+}
+main .variantasPirmas{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    /* display: flex; */
+    color: white;
+  
+   
+  
+
+}
+.variantasPirmas h1{
+    text-align: center;
+}
+.variantasPirmas ul{
+    list-style: none; 
+
+}
+
+.variantasPirmas .correct-answer{
+    color: #a7f79c;
+}
+.variantasPirmas p{
+    font-size: 20px;
+}
+.variantasPirmas .incorrect-answer{
+    color: #fda3a3;
+}
+.question, .correct-answer, .incorrect-answer  {
+    display: none;
+}
+.variantasPirmas button{
+    background-color: #72edb4 ;
+    border-radius: 30%;
+    font-size:25px;
+}
+
+.question.selected, .correct-answer.selected, .incorrect-answer.selected {
+    display: inherit;
+}
+
+.containerP{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width:100%;
+}
+.card{
+ border:none;
+}
+.card:hover{
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+.btn1{
+    
+    color: white;
+    padding: 5px  40px 5px 40px ;
+    background-color: #0c584c;
+    border: #007BFF;
+    border-radius: 5px 5px 5px 5px;
+   
+}
+.card-body p{
+    font-size: 20px;;
+    color: red;
+}
+.card-body .card-title{
+    margin-top: 10px;
+}
+
+h3{
+    margin-left: 20px;
+}
+
+
+.reset-filter{
+    border-radius: 20px;
+    background-color: white;
+}
+
+.reset-filter:hover{
+    background: -webkit-linear-gradient(rgb(0, 255, 89), rgb(0, 8, 3));
+    border-radius: 20px;
+    color: white;
+}
+
+#cars{
+    height: 35em;
+    object-fit: fill;
+}

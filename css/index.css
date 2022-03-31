@@ -1,0 +1,11 @@
+img{
+    object-fit: fill;
+    height: 40em;
+}
+li{
+    list-style-type: none;
+    margin-right: 45px;
+}
+#footer{
+    margin-top: 20px;
+}

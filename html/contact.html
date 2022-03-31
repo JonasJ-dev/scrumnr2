@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contact</title>
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Fuflo Arbata</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Apie <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">Prekės</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Kontaktai</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./test.html">Arbatos Testas</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Paieška">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Paieška</button>
+        </form>
+      </div>
+    </nav>
+
+  </header>
+
+  <form id="f">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Your email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="contacForm" class="form-label">Your message:</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit" onclick="submitSent()">Submit</button>
+    </div>
+  </form>
+
+  <div class="row justify-content-center">
+    <div class="col-4">
+      Mus rasite:<br><br> <b>Kalvarijų g. 159, Vilnius 08313</b>
+    </div>
+    <div class="col-4">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.1907346217827!2d25.283003716016243!3d54.72385977833917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd9135ff6966cf%3A0xa0d8df899fa70f47!2sVilnius%20Vocational%20Training%20Centre%20of%20Technologies!5e0!3m2!1sen!2slt!4v1647236515523!5m2!1sen!2slt"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+
+  <footer class="keiciamaKLFooter">
+    <div id="footer" class="card text-center">
+      <div class="card-body">
+        <ul>
+          <li><a class="card-text" href="contact.html">Kontaktai</a></li>
+          <li><a class="card-text" href="https://www.facebook.com/ateitiesprofesija" target="_blank">Soc.tinklai</a>
+          </li>
+          <li><a class="card-text" href="test.html">Testas</a></li>
+        </ul>
+        <p class="card-text text-muted">Copyright</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/contact.js"></script>
+</body>
+
+</html>
